@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | StacklyAgri</title>
+
+    <!-- Remix Icons -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <!-- Global CSS -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css">
+
+    <!-- Dashboard CSS -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/dashboard.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!--================ SIDEBAR ================-->
+
+        <aside class="sidebar">
+
+            <div class="sidebar__header">
+
+                <a
+                    href="index.html"
+                    class="logo">
+
+                    <img
+                        src="assets/images/logo-stackly.webp"
+                        alt="StacklyAgri">
+
+                </a>
+
+                <button
+                    class="sidebar__close">
+
+                    <i class="ri-close-line"></i>
+
+                </button>
+
+            </div>
+
+            <!-- User Profile -->
+
+            <div class="sidebar__user">
+
+                <div class="sidebar__avatar">
+
+                    <i class="ri-user-3-line"></i>
+
+                </div>
+
+                <h3
+                    id="userName">
+
+                    Madan Kumar
+
+                </h3>
+
+                <span
+                    id="userRole">
+
+                    Admin
+
+                </span>
+
+            </div>
+
+            <!-- Menu -->
+
+            <nav class="sidebar__menu">
+
+                <a
+                    href="#"
+                    class="sidebar__link active"
+                    data-page="dashboard">
+
+                    <i class="ri-dashboard-line"></i>
+
+                    <span>Dashboard</span>
+
+                </a>
+
+                <a
+                    href="#"
+                    class="sidebar__link"
+                    data-page="menu2">
+
+                    <i class="ri-group-line"></i>
+
+                    <span>Users</span>
+
+                </a>
+
+                <a
+                    href="#"
+                    class="sidebar__link"
+                    data-page="menu3">
+
+                    <i class="ri-bar-chart-line"></i>
+
+                    <span>Analytics</span>
+
+                </a>
+
+                <a
+                    href="#"
+                    class="sidebar__link"
+                    data-page="profile">
+
+                    <i class="ri-user-settings-line"></i>
+
+                    <span>Profile</span>
+
+                </a>
+
+            </nav>
+
+            <!-- Logout -->
+
+            <button
+                class="sidebar__logout">
+
+                <i class="ri-logout-box-r-line"></i>
+
+                Logout
+
+            </button>
+
+        </aside>
+
+        <!--================ MAIN ================-->
+
+        <main class="dashboard__main">
+
+            <!-- Header -->
+
+            <header
+                class="dashboard__header">
+
+                <button
+                    class="dashboard__toggle">
+
+                    <i class="ri-menu-line"></i>
+
+                </button>
+
+                <div>
+
+                    <h2
+                        id="pageTitle">
+
+                        Dashboard
+
+                    </h2>
+
+                    <p>
+
+                        Welcome back to StacklyAgri
+
+                    </p>
+
+                </div>
+
+            </header>
+
+            <!-- Dashboard Content -->
+
+            <section
+                class="dashboard__content">
+
+                <!-- Dashboard Page -->
+
+                <section
+                    id="dashboardPage"
+                    class="dashboard__page">
+
+                    <!-- Banner -->
+
+                    <div class="dashboard__banner">
+
+                        <div>
+
+                            <h2>
+
+                                Welcome back,
+                                <span id="dashboardUser">
+
+                                    Admin
+
+                                </span> 👋
+
+                            </h2>
+
+                            <p>
+
+                                Monitor platform activities,
+                                farmers and analytics.
+
+                            </p>
+
+                        </div>
+
+                        <i
+                            class="ri-dashboard-3-line">
+
+                        </i>
+
+                    </div>
+
+
+                    <!-- Statistics -->
+
+                    <div class="dashboard__cards">
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-group-line"></i>
+
+                            <h3>Total Users</h3>
+
+                            <span>124</span>
+
+                        </article>
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-user-star-line"></i>
+
+                            <h3>Farmers</h3>
+
+                            <span>98</span>
+
+                        </article>
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-file-chart-line"></i>
+
+                            <h3>Crop Reports</h3>
+
+                            <span>256</span>
+
+                        </article>
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-money-rupee-circle-line"></i>
+
+                            <h3>Revenue</h3>
+
+                            <span>₹1.2L</span>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Dashboard Grid -->
+
+                    <div class="dashboard__grid">
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                Recent Activities
+
+                            </h3>
+
+                            <ul
+                                class="dashboard__list">
+
+                                <li>
+
+                                    ✓ New farmer registered
+
+                                </li>
+
+                                <li>
+
+                                    ✓ Crop report uploaded
+
+                                </li>
+
+                                <li>
+
+                                    ✓ Weather alert issued
+
+                                </li>
+
+                                <li>
+
+                                    ✓ Analytics updated
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                Quick Actions
+
+                            </h3>
+
+                            <div class="dashboard__actions">
+
+                                <button
+                                    class="button">
+
+                                    Add Farmer
+
+                                </button>
+
+                                <button
+                                    class="button">
+
+                                    Export Reports
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- System Status -->
+
+                    <div class="dashboard__grid">
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                System Status
+
+                            </h3>
+
+                            <ul
+                                class="dashboard__list">
+
+                                <li>
+
+                                    🟢 API Server Online
+
+                                </li>
+
+                                <li>
+
+                                    🟢 Database Connected
+
+                                </li>
+
+                                <li>
+
+                                    🟢 Weather Service Active
+
+                                </li>
+
+                                <li>
+
+                                    🟢 AI Engine Running
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                Notifications
+
+                            </h3>
+
+                            <ul
+                                class="dashboard__list">
+
+                                <li>
+
+                                    New user verification pending
+
+                                </li>
+
+                                <li>
+
+                                    Weekly report generated
+
+                                </li>
+
+                                <li>
+
+                                    2 crop alerts received
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Menu 2 -->
+
+                <section
+                    id="menu2Page"
+                    class="dashboard__page"
+                    hidden>
+
+                    <!-- Statistics -->
+
+                    <div class="dashboard__cards">
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-group-line"></i>
+
+                            <h3>Total Users</h3>
+
+                            <span>124</span>
+
+                        </article>
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-user-star-line"></i>
+
+                            <h3>Admins</h3>
+
+                            <span>26</span>
+
+                        </article>
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-plant-line"></i>
+
+                            <h3>Farmers</h3>
+
+                            <span>98</span>
+
+                        </article>
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-user-add-line"></i>
+
+                            <h3>New This Month</h3>
+
+                            <span>18</span>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Search -->
+
+                    <div class="dashboard__table">
+
+                        <div class="table__header">
+
+                            <h3>
+
+                                Registered Users
+
+                            </h3>
+
+                            <input
+                                type="search"
+                                placeholder="Search users..."
+                                class="table__search">
+                        </div>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Name</th>
+
+                                    <th>Email</th>
+
+                                    <th>Role</th>
+
+                                    <th>Status</th>
+
+                                    <th>Action</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>Madan Kumar</td>
+
+                                    <td>madan@gmail.com</td>
+
+                                    <td>Admin</td>
+
+                                    <td>
+
+                                        <span
+                                            class="status active">
+
+                                            Active
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            class="action__btn">
+
+                                            View
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>John Farmer</td>
+
+                                    <td>john@gmail.com</td>
+
+                                    <td>Farmer</td>
+
+                                    <td>
+
+                                        <span
+                                            class="status active">
+
+                                            Active
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            class="action__btn">
+
+                                            View
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Alex</td>
+
+                                    <td>alex@gmail.com</td>
+
+                                    <td>Farmer</td>
+
+                                    <td>
+
+                                        <span
+                                            class="status inactive">
+
+                                            Inactive
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            class="action__btn">
+
+                                            View
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <div class="dashboard__grid">
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                Recent Registrations
+
+                            </h3>
+
+                            <ul
+                                class="dashboard__list">
+
+                                <li>
+
+                                    John joined 2 hours ago
+
+                                </li>
+
+                                <li>
+
+                                    Alex joined yesterday
+
+                                </li>
+
+                                <li>
+
+                                    Maria joined 3 days ago
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                User Insights
+
+                            </h3>
+
+                            <p>
+
+                                Farmer registrations
+                                increased by 15%
+                                this month.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Menu 3 -->
+
+                <section
+                    id="menu3Page"
+                    class="dashboard__page"
+                    hidden>
+
+                    <div class="dashboard__cards">
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-line-chart-line"></i>
+
+                            <h3>Growth Rate</h3>
+
+                            <span>18%</span>
+
+                        </article>
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-file-chart-line"></i>
+
+                            <h3>Reports</h3>
+
+                            <span>256</span>
+
+                        </article>
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-cloud-line"></i>
+
+                            <h3>Weather Alerts</h3>
+
+                            <span>14</span>
+
+                        </article>
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-map-pin-line"></i>
+
+                            <h3>Regions</h3>
+
+                            <span>12</span>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="dashboard__grid">
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                Key Insights
+
+                            </h3>
+
+                            <ul
+                                class="dashboard__list">
+
+                                <li>
+
+                                    Crop yield increased by 12%
+
+                                </li>
+
+                                <li>
+
+                                    Rainfall improved by 8%
+
+                                </li>
+
+                                <li>
+
+                                    Soil health improved by 15%
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                Recommendations
+
+                            </h3>
+
+                            <p>
+
+                                Increase farmer outreach
+                                in low adoption regions.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Profile -->
+
+                <section
+                    id="profilePage"
+                    class="dashboard__page"
+                    hidden>
+
+                    <div class="profile__grid">
+
+                        <!-- User Profile -->
+
+                        <div class="profile__card">
+
+                            <div class="profile__header">
+
+                                <div class="profile__avatar">
+
+                                    <i class="ri-user-3-line"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h3
+                                        id="profileName">
+
+                                    </h3>
+
+                                    <span
+                                        id="profileRole">
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="profile__details">
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Email
+
+                                    </label>
+
+                                    <span
+                                        id="profileEmail">
+
+                                    </span>
+
+                                </div>
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Phone
+
+                                    </label>
+
+                                    <span>
+
+                                        +91 9876543210
+
+                                    </span>
+
+                                </div>
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Location
+
+                                    </label>
+
+                                    <span>
+
+                                        Coimbatore,
+                                        Tamil Nadu
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Farm Information -->
+
+                        <div class="profile__card">
+
+                            <h3>
+
+                                Farm Information
+
+                            </h3>
+
+                            <div class="profile__details">
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Farm Size
+
+                                    </label>
+
+                                    <span>
+
+                                        12 Acres
+
+                                    </span>
+
+                                </div>
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Primary Crop
+
+                                    </label>
+
+                                    <span>
+
+                                        Wheat
+
+                                    </span>
+
+                                </div>
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Soil Type
+
+                                    </label>
+
+                                    <span>
+
+                                        Loamy Soil
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Account Settings -->
+
+                    <div class="profile__card">
+
+                        <h3>
+
+                            Account Settings
+
+                        </h3>
+
+                        <div class="settings__list">
+
+                            <div class="settings__item">
+
+                                <span>
+
+                                    Change Password
+
+                                </span>
+
+                                <button
+                                    class="button">
+
+                                    Update
+
+                                </button>
+
+                            </div>
+
+                            <div class="settings__item">
+
+                                <span>
+
+                                    Notification Preferences
+
+                                </span>
+
+                                <button
+                                    class="button">
+
+                                    Manage
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Dashboard JS -->
+
+    <script
+        src="assets/js/dashboard.js">
+
+    </script>
+
+</body>
+
+</html>
